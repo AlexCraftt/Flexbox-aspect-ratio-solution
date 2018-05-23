@@ -32,8 +32,9 @@ export default {
     height: 100px;
     top: 0;
   }
+
   .search-icon-area {
-    background: #ff8800;
+    background: #ff7b00da;
     width: 100px;
     height: 100%;
     position: relative;
@@ -42,8 +43,8 @@ export default {
 
   .icon-search {
     color: #ff5100;
-    left: 46%;
-    top: 44%;
+    left: 10%;
+    top: 10%;
     margin-right: -50%;
     position: relative;
   }
