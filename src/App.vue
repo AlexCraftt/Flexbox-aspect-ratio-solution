@@ -4,6 +4,9 @@
       <div class="top">
 
       </div>
+      <div class="first-grid">
+        <img class="img1" src="src/assets/img/fxxxjhyyy.jpg" alt="">
+      </div>
     </div>
     
   </div>
@@ -35,10 +38,27 @@ export default {
 
   .top {
     display: flex;
+    flex-direction: row;
     background: #ff9d00;
     align-self: flex-start;
     min-width: 100%;
     height: 70px;
-    top: 0;
   }
+
+  .first-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: tomato;
+    min-width: 100%;
+    height: 350px;
+  }
+
+  img1 {
+    flex-basis: 30%;
+    flex-grow: 1;
+  }
+
+
 </style>
