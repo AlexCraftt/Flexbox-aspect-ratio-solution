@@ -1,10 +1,11 @@
 <template>
-  <div class="main-screen">
-    <div class="top">
-      <div class="search-icon-area">
-          <i class="fa fa-search icon-search fa-6x"></i>
+  <div class="main">
+    <div class="container">
+      <div class="top">
+
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -16,36 +17,28 @@ export default {
 
 <style scoped>
 
-  .main-screen {
-    background: #fde152;
+  .main {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    min-width: 760px;
+    background: #fde152;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100%;
   }
 
   .top {
+    display: flex;
     background: #ff9d00;
-    width: 100%;
-    height: 100px;
+    align-self: flex-start;
+    min-width: 100%;
+    height: 70px;
     top: 0;
-  }
-
-  .search-icon-area {
-    background: #ff7b00da;
-    width: 100px;
-    height: 100%;
-    position: relative;
-    left: 100px;
-  }
-
-  .icon-search {
-    color: #ff5100;
-    left: 10%;
-    top: 10%;
-    margin-right: -50%;
-    position: relative;
   }
 </style>
