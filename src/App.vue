@@ -17,7 +17,7 @@ export default {
 <style scoped>
 
   .main-screen {
-    background: #fde152;
+    background: linear-gradient(#fb3, #58a);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -27,14 +27,14 @@ export default {
   }
 
   .top {
-    background: #ff9d00;
+    background: #ccc;
     width: 100%;
     height: 100px;
     top: 0;
   }
 
   .search-icon-area {
-    background: #ff7b00da;
+    background: #ccc;
     width: 100px;
     height: 100%;
     position: relative;
@@ -42,7 +42,7 @@ export default {
   }
 
   .icon-search {
-    color: #ff5100;
+    color: linen;
     left: 10%;
     top: 10%;
     margin-right: -50%;
