@@ -1,34 +1,36 @@
 <template>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <section>
-    <div class="wrapper">
-      <div class="row rel">
-        <div class="rel__offset"></div>
-        <div class="rel__content">
-          <div class="big">0</div>
-          <div class="product product1">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-          </div>
-          <div class="product product2">
-            <div class="item item3">3</div>
-            <div class="item item4">4</div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Адаптивная верстка</title>
+    </head>
+    <body>
+      <section>
+        <div class="wrapper">
+          <div class="row rel">
+            <div class="rel__offset"></div>
+            <div class="rel__content">
+              <div class="big">0</div>
+              <div class="product product1">
+                <div class="item item1">1</div>
+                <div class="item item2">2</div>
+                <div class="item item3">3</div>
+              </div>
+              <div class="product product2">
+                <div class="item item4">4</div>
+                <div class="item item5">5</div>
+                <div class="item item6">6</div>
+              </div>
+            </div>
+
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-</body>
-</html>
+      </section>
+    </body>
+  </html>
 </template>
 
 <script>
@@ -37,13 +39,14 @@ export default {
 }
 
 </script>
+<style>
+html, body {
+    background: cornsilk;
+    margin: 0;
+}
+</style>
 
 <style scoped>
-  html, body{
-    margin: 0;
-    background: #ddd;
-}
-
 .rel{
     position: relative;
 }
@@ -76,9 +79,10 @@ export default {
 }
 
 .wrapper{
-    max-width: 1280px;
+    /* max-width: 1280px; */
+    width: auto;
     margin: 0 auto;
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 
 .row{
@@ -89,21 +93,15 @@ export default {
     padding-top: 56.25%;
 }
 
-.rel__content{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
 .big{
     background: #FFFD73;
     flex: 1 1 100%;
-    width: 40%;
+    width: 60%;
 }
 
 .product{
     flex: 1 1 100%;
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
 }
@@ -113,7 +111,7 @@ export default {
 }
 
 .item{
-    flex: 1 1 50%;
+    flex: 1 1 20%;
 }
 
 .item1{
@@ -132,17 +130,25 @@ export default {
     background: #73C9FF;
 }
 
+.item5{
+    background: greenyellow;
+}
+
+.item6{
+    background: lightcoral;
+}
+
 @media screen and (max-width: 780px){
     .row .rel__offset{
         padding-top: 100%;
     }
     
     .big{
-        width: 70%;
+        width: 80%;
     }
     
     .product{
-        flex: 1 1 50%;
+        flex: 1 1 20%;
     }
     
     .product1{
