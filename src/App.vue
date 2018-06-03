@@ -13,16 +13,16 @@
           <div class="row rel">
             <div class="rel__offset"></div>
             <div class="rel__content">
-              <div class="big">0</div>
+              <div class="big"></div>
               <div class="product product1">
-                <div class="item item1">1</div>
-                <div class="item item2">2</div>
-                <div class="item item3">3</div>
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
               </div>
               <div class="product product2">
-                <div class="item item4">4</div>
-                <div class="item item5">5</div>
-                <div class="item item6">6</div>
+                <div class="item item4"></div>
+                <div class="item item5"></div>
+                <div class="item item6"></div>
               </div>
             </div>
 
@@ -161,7 +161,7 @@ html, body {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 560px){
     .row .rel__offset {
         display: none;
     }
@@ -171,9 +171,22 @@ html, body {
         position: static;
     }
 
-    .big, .product{
+
+    .product{
         width: auto;
     }
+
+    .big {
+        width: auto;
+        padding-top: 100%;
+        
+    }
+
+    .item {
+        width: auto;
+        padding-top: 100%;
+    }
+
 }
 </style>
 
