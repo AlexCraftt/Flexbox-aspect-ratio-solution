@@ -39,14 +39,13 @@ export default {
 }
 
 </script>
+
 <style>
 html, body {
     background: cornsilk;
     margin: 0;
 }
-</style>
 
-<style scoped>
 .rel{
     position: relative;
 }
@@ -94,9 +93,10 @@ html, body {
 }
 
 .big{
-    background: #FFFD73;
+    background: #f4d058;
     flex: 1 1 100%;
     width: 60%;
+    align-items: center;
 }
 
 .product{
@@ -112,33 +112,38 @@ html, body {
 
 .item{
     flex: 1 1 20%;
+    height: calc(50% - 30px);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .item1{
-    background: #73C9FF;
+    background-image: url(assets/img/001.jpg);
 }
 
 .item2{
-    background: tomato;
+    background-image: url(assets/img/002.jpg);
 }
 
 .item3{
-    background: #7373FF;
+    background-image: url(assets/img/003.jpg);
 }
 
 .item4{
-    background: #73C9FF;
+    background-image: url(assets/img/004.jpg);
 }
 
 .item5{
-    background: greenyellow;
+    background-image: url(assets/img/005.jpg);
 }
 
 .item6{
-    background: lightcoral;
+    background-image: url(assets/img/006.jpg);
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 992px){
     .row .rel__offset{
         padding-top: 100%;
     }
@@ -156,24 +161,20 @@ html, body {
     }
 }
 
-@media screen and (max-width: 560px){
-    .row .rel__offset{
+@media screen and (max-width: 600px){
+    .row .rel__offset {
         display: none;
     }
-    
+
     .rel__content{
         flex-wrap: nowrap;
         position: static;
     }
-   
+
     .big, .product{
         width: auto;
     }
-    
-    
 }
-
-
 </style>
 
 
