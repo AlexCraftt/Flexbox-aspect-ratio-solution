@@ -1,7 +1,5 @@
 # app004
-> Vue.js+webpack+vue-loader
-> Использование однофайловых компонентов *.vue
-> Адаптивная вёрстка
+> Компонент, поддерживающий регулируемое соотношение сторон (CSS, Flexbox)
 
 ## Сборка проекта на localhost:
 ``` bash
@@ -14,4 +12,4 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-Более подробно о том, как это работает: [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
